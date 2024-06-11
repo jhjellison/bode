@@ -591,7 +591,7 @@ class KLSampler(object):
 		ax2.tick_params(axis='y', colors=sns.color_palette()[2])
 		ax1.set_ylabel('$f(x)$', fontsize=16)
 		ax1.set_xlim(self.bounds[0])
-		plt.savefig(self.__name__ + '_kld_' + str(it+1).zfill(len(str(self.max_it))) +'.png', dpi=(900), figsize=(3.25, 3.25))
+		plt.savefig(self.__name__ + '_kld_' + str(it+1).zfill(len(str(self.max_it))) +'.png', dpi=(900))
 		plt.clf()
 
 
