@@ -35,5 +35,5 @@ Running the code: the examples in the ```tests``` directory can be called from t
 
 After each iteration a plot depicting the state of the function is generated for 1d problems, this can be controlled by a ```plots``` flag set to 0 or 1.  
 
-More documentation to follow.
-If you have any questions about pydes, contact me at piyush100078@gmail.com .
+The original version of the code may be found at https://github.com/piyushpandita92/bode.git 
+This fork is currently for quality of life improvments. In the future it aims to improve the running speed and make running 2 (and higher) dimensional datasets easier
