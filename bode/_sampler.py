@@ -561,9 +561,13 @@ class KLSampler(object):
 			idx = np.argsort(X_design[:, ], axis=0)[:, 0]
 			ax2.plot(X_design[idx[:]], kld[idx[:]], linestyle='-.', linewidth=3.0, c=sns.color_palette()[2], label='EKLD')
 		if it==self.max_it-1:
+			print(f'x_best shape is {x_best.shape}')
+			print(f'y_obs shape is {y_obs.shape}')
 			ax1.scatter(x_best, y_obs, marker='X', s=80, c='black', zorder=10)
 			dat = ax1.scatter(self.X[:, 0], self.Y[:, 0], marker='X', s=80, c='black', label='observed data', zorder=10)
 		else:
+			print(f'x_best shape is {x_best.shape}')
+			print(f'y_obs shape is {y_obs.shape}')
 			obs = ax1.scatter(x_best, y_obs, marker='D', s=80, c=sns.color_palette()[3], label='latest experiment', zorder=10)
 			dat = ax1.scatter(self.X[:, 0], self.Y[:, 0], marker='X', s=80, c='black', label='observed data', zorder=10)
 		if comp_plots:
