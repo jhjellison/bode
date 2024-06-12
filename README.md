@@ -15,7 +15,7 @@ It needs the support of the following PYTHON packages.
 6. emcee
 
 To install the package do the following:
-pip install git+git://github.com/piyushpandita92/bode.git  
+pip install git+https://github.com/jhjellison/bode.git  
 
 or clone the repository and run python setup.py install.
 
